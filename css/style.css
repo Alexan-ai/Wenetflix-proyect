@@ -1,0 +1,668 @@
+/* Custom Properties */
+:root{
+    --bg-body: #212025;
+    --primary-color: #c20912;
+    --fontSize-title: 40px;
+    --fontSize-parrafos: 15px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+
+/* FUENTES  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300;1,400&family=Work+Sans:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+
+/* Reset Styles */
+
+body{
+    background-color: #000;
+}
+
+/* Bootstrap Styles */
+
+
+h1,h2,h3,h4,h5{
+    font-family: 'Montserrat', sans-serif ;
+}
+
+p,a,li,td,input,label{
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+/* NAVBAR */
+
+
+.navbar-social{
+    position: absolute;
+    width: 80%;
+    margin-left: 100px;
+    margin-bottom: 90px;
+}
+
+.social-menu ul{
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-100%, -40%);
+    display: flex;
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.social-menu ul li .fa-brands {
+    font-size: 25px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+}
+
+.social-menu ul li .fa-brands:hover{
+    color: #212025;
+}
+
+.social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #212025;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(15, 15, 15, 0.5);
+}
+
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #25d366;
+}
+
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #3360ff;
+}
+
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #c32aa3;
+}
+
+
+
+/* HERO */
+#hero{
+    margin-bottom: 90px;
+}
+
+#hero h1{
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#hero p{
+    font-size: var(--fontSize-parrafos);
+}
+
+#hero .container .button-{
+    width: 100%;
+}
+
+#hero .banner-info{
+    padding-top: 10%;
+}
+
+/* PLANES */
+
+#planes{
+    width: 100%;
+    position: relative;
+    padding: 50px 0px 20px;
+    text-align: center;
+}
+
+#planes h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#planes p{
+    color: #c6c6c6;
+    font-size: var(--fontSize-parrafos);
+}
+
+#planes .row{
+    padding-top: 70px;
+}
+
+#planes .card-service{
+    background: #212025;
+    border-radius: 4px;
+    position: relative;
+    padding: 50px 30px 30px 40px;
+    transition: .4s;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#planes .card-service:hover{
+    background: var(--primary-color);
+}
+
+#planes .card-service img{
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    /* object-fit: cover; */
+}
+
+#planes .card-service h3{
+    text-align: right;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#planes .card-service h4{
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+#planes .card-service p{
+    color: #c6c6c6;
+    font-size: 15px;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#planes .card-service a{
+    display: block;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    color: #fff; 
+    background-color: #353945  ;
+    font-size: 17px;
+    text-decoration: none;
+    transition: .4s;
+
+}
+
+#planes .card-service a:hover{
+    background: #c6c6c6;
+}
+
+
+/* TV LIVE */
+
+#tv-live{
+    width: 100%;
+    position: relative;
+    padding: 50px 0;
+}
+
+#tv-live h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#tv-live p{
+    font-size: var(--fontSize-parrafos);
+    color: #fff;
+}
+
+#tv-live .tv-section {
+    /* width: 500px; */
+    padding: 80px 0;
+
+}
+
+#tv-live .tv-section img{
+    width: 100%;
+    max-width: 350px;
+    object-fit: cover;
+}
+
+
+#tv-live .button-info
+
+
+#tv-live .tv-text{
+    color: #fff   ;
+}
+
+#tv-live .tv-text h2{
+
+    color: #fff;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: right;
+
+}
+
+#tv-live .tv-text p{
+    font-size: 19px;
+    text-align: right;
+
+}
+
+
+
+
+
+#tv-live .tv-catalogo{
+    width: 150px;
+    position: relative;
+    transform: .4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#tv-live .tv-catalogo img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+#tv-live .tv-catalogo img:hover{
+    transform: scale(1.5);
+}
+
+#tv-live .tv-catalogo h4{
+    font-size: 15px;
+}
+
+
+/* TIPOS DE DISPOSITIVOS */
+
+#tv-dispositivos{
+    width: 100%;
+    position: relative;
+    padding: 100px 0;
+
+}
+
+#tv-dispositivos .dispositivos h2{
+    padding-left: 40px;
+    font-size: 35px;
+}
+
+#tv-dispositivos .dispositivos p{
+    padding-left: 40px;
+}
+
+
+
+#tv-dispositivos .dispositivos{
+    background-color: #212025;
+    text-align: left;
+    
+}
+
+
+#tv-dispositivos .img-dispositivos img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* FAQQ */
+
+#faq{
+    width: 100%;
+    position: relative;
+    padding: 50px 0 80px;
+
+}
+
+#faq__ h1 {
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 70px;
+
+    
+}
+
+.accordion-button{
+    background-color: #000 !important;
+    color: #fff;
+}
+
+.accordion{
+    --bs-accordion-border-color: #000 !important;
+    --bs-accordion-bg: #000 !important;
+}
+
+.accordion-button:not(.collapsed){
+
+    color: var(--primary-color) !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+
+/* SECCION COMENTARIOS */
+
+#comentarios{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 40px 0 30px;
+    color: #fff;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+
+#comentarios .carousel-item img{
+    width: 150px;
+}
+
+#comentarios .carousel-item h2{
+    font-size: 40px;
+} 
+
+#comentarios .carousel-item p{
+    font-size: 18px;
+}
+
+#comentarios .carousel-item .text-muted{
+    font-size: 20px;
+    color: #9f9f9f;
+} 
+
+/* 5 ESTRELLAS */
+
+
+#comentarios form{
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+}
+
+#comentarios label{
+    color: orange;
+}
+
+#comentarios input{
+    display: none;
+}
+
+/* footer  */
+
+footer{
+    background: #212025;
+    text-align: left;
+    color: #fff;
+    padding-top: 30px;
+}
+
+
+footer img{
+    width: 150px;
+}
+
+footer .social-bar{
+    text-align: center;
+}
+
+footer .social-bar .fa-brands {
+    font-size: 35px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+    padding: 20px;
+}
+
+footer .form h3{
+    text-align: right;
+    font-size: 25px;
+}
+footer .form_group input{
+    background:none;
+    width: 100%;
+    text-align: end;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+}
+
+footer .form_group button{
+    margin-top: 25px;
+    
+}
+
+/* BOTON FIXED WS */
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px rgb(28, 28, 28);
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+
+/* Responsive */
+
+@media screen and (min-width:320px) and (max-width:990px) {    
+
+    .social-menu ul{
+        display: none;
+    }
+
+    #hero a img{
+        display: none;
+    }
+
+    #hero h1{
+        font-size: 35px;
+    }
+
+
+    #hero .cont-info h1{
+        margin-top: 50px;
+        margin-right: 50px;
+        font-size: 30px;
+    }
+
+    #hero .cont-info{
+        padding-left: 40px;
+    }
+
+    #hero .cont-info .destacada h2{
+        margin-right: 30px;
+    }
+
+    #hero .cont-foto img{
+        width: 300px;
+        height: 300px;
+    }
+
+    #hero .banner-info{
+        padding-top: 15%;
+    }
+
+    #hero .info-hero{
+        width: 100% !important;
+    }
+    
+    #hero .cont-info p{
+        margin-right: 50px;
+        font-size: 20px;
+    }
+
+    #planes h2{
+        font-size: 35px;
+    }
+
+    #planes p{
+        font-size: 20px;
+    }
+
+
+
+    #hero .cont-foto{
+        width: 100%;
+    }
+
+    #hero .cont-foto::before{
+        left: 0;
+    }
+
+
+
+    #tv-live .button-info-catalogo{
+        display: none !important ;
+    }
+
+    #tv-live .box-tv{
+        justify-content: space-around !important;
+        align-items: center;
+    }
+
+    #tv-live .tv-catalogo{
+       display: none;
+    }
+
+    #tv-dispositivos .dispositivos p{
+        display: none;
+    }
+
+    #comentarios h1{
+        padding: 50px;
+        font-size: 25px;
+    }
+
+    #tv-live p{
+        font-size: 20px;
+    }
+
+    #tv-live .tv-text h2{
+        text-align: center;
+        font-size: 35px;
+    }
+
+    
+    #tv-live .tv-text p{
+        text-align: center;
+    }
+
+    #tv-live .tv-section img{
+        max-width: 350px;
+    }
+
+    footer .social-bar .fa-brands{
+        font-size: 30px;
+    }
+
+    footer .form h3 {
+        text-align: center;
+    }
+
+    footer .button-info{
+        justify-content: center !important;
+    }
+
+
+    
+} 
+
+@media screen and (min-width:320px) and (max-width:600px){
+    #tv-dispositivos .dispositivos h2{
+        font-size: 25px;
+    }
+
+    #tv-live .tv-text h2{
+        font-size: 24px;
+    }
+
+    .navbar-social{
+        margin-left: 0;
+    }
+
+    footer .form h3{
+        font-size: 20px;
+    }
+
+    #hero.info-hero h1{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (min-width:320px) and (max-width:400px){
+
+    #tv-dispositivos .dispositivos h2{
+        padding-left: 0;
+    }
+
+    #tv-dispositivos .texto-home h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #tv-dispositivos .texto-home{
+        width: 100%;
+    }
+
+    #tv-dispositivos .tv-img{
+        display: none;
+    }
+
+    #hero .banner-info{
+        padding-top: 25%;
+    }
+}
